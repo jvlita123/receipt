@@ -5,33 +5,31 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script src='C:\Users\Admin\Desktop\js\Projekt_1\app.js'></script>
+    <script src='app.js'></script>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
-<body onload="fm()">
+<body onload="start()">
     <header>
         <h1>PARAGON 30-03-15/004</h1>
     </header>
 
-    <table id = "myTable">
+    <table id = "myTable" class = "tabele">
     </table>
 
     <form class="text-form" id="myForm">
         
-        <label for="nazwa">Nazwa</label>
-        <input type="text" id="nazwa"/>
-        <p class="nazwa-validation"></p>
+        <input type="text"  id="name"  placeholder="Nazwa"/>
+        <p class="name-validation"></p>
 
-        <label for="ilosc">Ilość</label>
-        <input type="text" id="ilosc"/>
-        <p class="ilosc-validation"></p> 
+        <input type="text" id="quantity" placeholder="Ilość"/>
+        <p class="quantity-validation"></p> 
 
-        <label for="Cena">cena</label>
-        <input type="text" id="cena"/>
-        <p class="cena-validation"></p>
-
-        <input type="button" onclick="paragon.dodajProdukt()" value="Submit form">
+        <input type="text" id="price"  placeholder="Cena"/>
+        <p class="proce-validation"></p>
+        <input type="submit" onclick="receipt.addProduct()" id ="submit" value="Submit">
     </form>
 
+
 </body>
+
 </html>

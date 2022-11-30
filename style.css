@@ -1,11 +1,12 @@
-body {
+body,table {
     color: #001028;
-    background: #FFFFFF; 
+    background: #ffffff; 
     font-family: Arial, sans-serif; 
     font-size: 12px; 
     font-family: Arial;
     margin-left:auto;
     margin-right:auto;
+    width: 100%;
   }
   
   header {
@@ -24,4 +25,58 @@ body {
     margin-top: 0;
   }
 
+  .tabele{max-width:100%;font-family:sans-serif;}
+  .tabele table{width:100%;border-collapse:collapse;}
+  .tabele caption{font-size:1.4em;padding:20px;}
+  .tabele thead tr{background: #000;color:#fff;}
+  .tabele tbody tr{background: #eee;}
+  .tabele tr:nth-child(even){background: rgb(255, 222, 245,0.5);}
+  .tabele td{padding:8px 4px;text-align: center;}
   
+.tabele tr:hover{
+	background: rgba(234, 182, 219, 0.1);
+}
+input[type=text] {
+  padding:10px;
+  border:0;
+  margin:10px 0;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+.rounded-input {
+  padding:10px;
+  border-radius:10px;
+}
+input {
+  width:30%;
+}
+input, textarea {
+  font-family:inherit;
+  font-size: inherit;
+}
+
+button{
+  appearance:none;
+  -webkit-appearance:none;
+  padding:10px;
+  border:none;
+  background-color: rgba(181, 98, 156, 0.19);
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;
+  width:100%;
+}
+#submit{
+  appearance:none;
+  -webkit-appearance:none;
+  padding:10px;
+  border:none;
+  background-color: rgba(181, 98, 156, 0.19);
+  color:#fff;
+  font-weight:600;
+  border-radius:5px;
+  width:30%;
+}
+  
+button:hover{
+	background: rgba(161, 23, 120, 0.4);
+}
