@@ -28,7 +28,6 @@ class Receipt {
     this.addProduct = function() {
       const form =  document.getElementById("myForm");
 
-      //Validacja danych
       if(form.elements['name'].value=="" || form.elements['price'].value=="" || form.elements['quantity'].value==""){
         alert("Pole nie może być puste");
         return false;
@@ -222,7 +221,8 @@ var receipt = new Receipt();
   if(JSON.parse(localStorage.getItem("Date")) != undefined){
     const list = JSON.parse(localStorage.getItem("Date"));
     receipt.list = list;
-  }
+     }
+
   console.log(receipt.list);
   receipt.sumReceipt = receipt.getSumReceipt();
   receipt.update();
